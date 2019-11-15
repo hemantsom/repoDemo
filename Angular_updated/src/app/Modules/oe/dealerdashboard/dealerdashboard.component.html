@@ -1,0 +1,66 @@
+<br>
+<br>
+<br>
+<br>
+<div>
+  <button mat-raised-button color="primary" (click)="openDialog()">Add</button>
+</div>
+
+<table mat-table [dataSource]="dealermaster" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="dealerId">
+    <th mat-header-cell *matHeaderCellDef> Id </th>
+    <td mat-cell *matCellDef="let element">{{element.dealerId}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="dealerName">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.dealerName}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="dealerContactNo">
+    <th mat-header-cell *matHeaderCellDef> dealerContactNo </th>
+    <td mat-cell *matCellDef="let element"> {{element.dealerContactNo}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="dealerAddress">
+    <th mat-header-cell *matHeaderCellDef> dealerAddress </th>
+    <td mat-cell *matCellDef="let element"> {{element.dealerAddress}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="dealerAccountNo">
+    <th mat-header-cell *matHeaderCellDef> dealerAccountNo </th>
+    <td mat-cell *matCellDef="let element"> {{element.dealerAccountNo}} </td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="dealerEmail">
+    <th mat-header-cell *matHeaderCellDef> dealerEmail </th>
+    <td mat-cell *matCellDef="let element"> {{element.dealerEmail}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="dealerStatus">
+    <th mat-header-cell *matHeaderCellDef> dealerStatus </th>
+    <td mat-cell *matCellDef="let element"> {{element.dealerStatus}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="dealerIFSCCode">
+    <th mat-header-cell *matHeaderCellDef> dealerIFSCCode </th>
+    <td mat-cell *matCellDef="let element"> {{element.dealerIFSCCode}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="dealerAccountType">
+    <th mat-header-cell *matHeaderCellDef> dealerAccountType </th>
+    <td mat-cell *matCellDef="let element"> {{element.dealerAccountType}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="dealerBankName">
+    <th mat-header-cell *matHeaderCellDef> dealerBankName </th>
+    <td mat-cell *matCellDef="let element"> {{element.dealerBankName}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+  

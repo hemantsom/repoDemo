@@ -1,0 +1,44 @@
+<h2 mat-dialog-title>Dealer Details</h2>
+<mat-dialog-content class="mat-typography">
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Dealer Name" [(ngModel)]="shared.dealer.dealerName" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Dealer ContactNo" [(ngModel)]="shared.dealer.dealerContactNo" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Dealer Address" [(ngModel)]="shared.dealer.dealerAddress" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Dealer AccountNo" [(ngModel)]="shared.dealer.dealerAccountNo" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Dealer Email" [(ngModel)]="shared.dealer.dealerEmail" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Dealer Status" [(ngModel)]="shared.dealer.dealerStatus" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Dealer IFSCCode" [(ngModel)]="shared.dealer.dealerIFSCCode" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Dealer AccountType" [(ngModel)]="shared.dealer.dealerAccountType" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Dealer BankName" [(ngModel)]="shared.dealer.dealerBankName" [ngModelOptions]="{standalone: true}">
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button  mat-raised-button (click)="submitData(shared.dealer)" cdkFocusInitial>Submit</button>
+</mat-dialog-actions>
